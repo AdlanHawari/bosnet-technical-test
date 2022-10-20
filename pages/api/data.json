@@ -1,0 +1,32 @@
+[
+  { "name": "HARFLEX MINI 80", "low": 33000, "high": 8000, "cat": "Roof" },
+  { "name": "HARFLEX SIRAP 80", "low": 38000, "high": 41000, "cat": "Roof" },
+  { "name": "HARFLEX SUPER 108", "low": 73500, "high": 73500, "cat": "Roof" },
+  { "name": "PRIMA BOARD", "low": 51350, "high": 58700, "cat": "Wood" },
+  {
+    "name": "NOK STEL GELOMBANG HARFLEX MINI 105",
+    "low": 44000,
+    "high": 44000,
+    "cat": "Roof"
+  },
+  {
+    "name": "NOK STEL GELOMBANG HARFLEX MINI 80",
+    "low": 33000,
+    "high": 33000,
+    "cat": "Roof"
+  },
+  {
+    "name": "NOK HARFLEX GENTENG",
+    "low": 33000,
+    "high": 33000,
+    "cat": "Roof"
+  },
+  {
+    "name": "NOK STEL GELOMBANG HARFLEX SUPER 04",
+    "low": 72000,
+    "high": 72000,
+    "cat": "Roof"
+  },
+  { "name": "VERSA BOARD", "low": 45520, "high": 195400, "cat": "Board" },
+  { "name": "VERSA SPEND", "low": 16000, "high": 16000, "cat": "Board" }
+]
