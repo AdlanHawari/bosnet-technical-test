@@ -1,27 +1,44 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 
 export default function NumberTwoPage() {
-  function unique(s) {
+  const [result, setResult] = useState();
+  const [inp, setInp] = useState("");
+  function CheckChar(s) {
     let str = "";
     let len = s.length;
     for (let i = 0; i < len; i++) {
-      // character at i'th index of s
       let c = s[i];
-
-      // if c is present in str, it returns
-      // the index of c, else it returns -1
       if (str.indexOf(c) < 0) {
-        // adding c to str if -1 is returned
         str += c;
       }
     }
-
-    return str;
+    setResult(str);
+    // return str;
   }
-  useEffect(() => {
-    const a = unique("the quick brown fox jumps then quickly blow air");
-    console.log(a);
-  }, []);
+  // useEffect(() => {
+  //   const a = unique("the quick brown fox jumps then quickly blow air");
+  // }, []);
 
-  return <div>index</div>;
+  return (
+    <div>
+      <div className=" flex space-x-4">
+        <input
+          className="border border-black"
+          type="text"
+          value={inp}
+          onChange={(e) => setInp(e.target.value)}
+        />
+        <button
+          className="bg-green-600 rounded-lg px-4"
+          type="button"
+          onClick={() => CheckChar(inp)}
+        >
+          Run
+        </button>
+      </div>
+      <div className="flex">
+        <h3>Result: {result}</h3>
+      </div>
+    </div>
+  );
 }
